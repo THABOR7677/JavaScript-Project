@@ -23,9 +23,39 @@
 
 // How to accept user Input
 
-let username;
+// let username;
+
+// document.getElementById("mySubmit").onclick = function(){
+//     username = document.getElementById("myText").value;
+//     document.getElementById("myH1").textContent = `hello ${username}`
+// }
+
+// type Coversion = Change the datatype of value to another( Strings, numbers, booleans)
+
+// let x = "Burgar";
+// let y = "Burgar";
+// let z = "Burgar";
+
+// x = Number(x);
+// y = String(y);
+// z = Boolean(z);
+
+
+// console.log(x, typeof x)
+// console.log(y, typeof y)
+// console.log(z, typeof z)
+
+
+// Const = a variable that cant be changed
+
+const PI = 3.14159;
+let radius;
+let circumference;
+
 
 document.getElementById("mySubmit").onclick = function(){
-    username = document.getElementById("myText").value ;
-    document.getElementById("myH1").textContent = `hello ${username}`
+    radius = document.getElementById("myText").value;
+    radius = Number(radius);
+    circumference = 2 * PI * radius;
+    document.getElementById("myH3").textContent = circumference + "cm"
 }
